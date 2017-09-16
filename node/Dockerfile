@@ -1,14 +1,10 @@
 # --- NEO4J CLUSTER ---
 
-FROM ubuntu:17.10
-MAINTAINER Matthieu Fronton <fronton@ekino.com>
-ENV DEBIAN_FRONTEND noninteractive
+FROM debian:jessie
+MAINTAINER Nathaniel Davidson <nathaniel.davidson@gmail.com>
 
 # required tools
 RUN apt-get update
-RUN add-apt-repository ppa:webupd8team/java
-RUN apt-get update
-RUN apt-get install oracle-java8-installer
 RUN apt-get install -y wget curl
 
 # install neo4j
