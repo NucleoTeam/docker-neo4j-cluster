@@ -4,6 +4,7 @@ FROM debian:jessie
 MAINTAINER Nathaniel Davidson <nathaniel.davidson@gmail.com>
 
 # required tools
+RUN add-apt-repository ppa:webupd8team/java -y
 RUN apt-get update
 RUN apt-get install -y wget curl
 
