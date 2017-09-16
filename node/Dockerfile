@@ -14,7 +14,7 @@ RUN apt-get install oracle-java8-installer -y
 RUN apt-get install -y wget curl
 
 # install neo4j
-RUN wget http://neo4j.com/artifact.php?name=neo4j-enterprise-3.2.3-unix.tar.gz
+RUN wget http://neo4j.com/artifact.php?name=neo4j-enterprise-3.2.3-unix.tar.gz -O neo4j-enterprise-3.2.3-unix.tar.gz
 RUN tar -xf neo4j-enterprise-3.2.3-unix.tar.gz
 RUN mkdir /var/lib/neo4/
 RUN cd neo4j-enterprise-3.2.3-unix/; mv -R ./* /var/lib/neo4/;cd ..
