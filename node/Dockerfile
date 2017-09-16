@@ -1,6 +1,6 @@
 # --- NEO4J CLUSTER ---
 
-FROM debian:jessie
+FROM ubuntu:14.04
 MAINTAINER Nathaniel Davidson <nathaniel.davidson@gmail.com>
 
 # required tools
