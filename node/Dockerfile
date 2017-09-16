@@ -1,6 +1,6 @@
 # --- NEO4J CLUSTER ---
 
-FROM ubuntu:trusty
+FROM ubuntu:17.10
 MAINTAINER Matthieu Fronton <fronton@ekino.com>
 ENV DEBIAN_FRONTEND noninteractive
 
