@@ -6,6 +6,9 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # required tools
 RUN apt-get update
+RUN add-apt-repository ppa:webupd8team/java
+RUN apt-get update
+RUN apt-get install oracle-java8-installer
 RUN apt-get install -y wget curl
 
 # install neo4j
