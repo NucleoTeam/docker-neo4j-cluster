@@ -1,6 +1,6 @@
 # --- NEO4J CLUSTER ---
 
-FROM ubuntu:14.04
+FROM ubuntu:17.04
 MAINTAINER Nathaniel Davidson <nathaniel.davidson@gmail.com>
 
 # required tools
