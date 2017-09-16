@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:webupd8team/java -y
 RUN apt-get update -y
-RUN apt-get install oracle-java8-installer -y
+RUN apt-get install oracle-java8-installer -y | yes
 RUN apt-get install -y wget curl
 
 # install neo4j
