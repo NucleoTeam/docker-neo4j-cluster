@@ -70,4 +70,4 @@ echo
 
 echo "==> Starting Neo4J server (with supervisord)"
 echo
-supervisord -n
+/var/lib/neo4j/bin/neo4j console
