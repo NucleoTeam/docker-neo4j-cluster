@@ -1,6 +1,6 @@
 # ekino/neo4j-cluster
 
-[![Circle CI](https://circleci.com/gh/ekino/docker-neo4j-cluster.svg?style=svg)](https://circleci.com/gh/ekino/docker-neo4j-cluster)
+[![Build Status](http://50.115.119.76:2001/buildStatus/icon?job=NucleoTeam/docker-neo4j-cluster/master)](http://50.115.119.76:2001/job/NucleoTeam/docker-neo4j-cluster/master)
 
 ## Description
 
@@ -17,14 +17,6 @@ this repo.
 For more informations :
 - Licenses :  http://neo4j.com/subscriptions/
 - Contact : http://neo4j.com/contact-us/
-
-## TL;DR
-
-If you are on linux :
-```bash
-# start a neo4j cluster w/ 3 nodes
-curl -sSL https://raw.githubusercontent.com/ekino/docker-neo4j-cluster/master/helper.sh | bash -s run:neomaster,neoreadslave,neobackup
-```
 
 ## Cluster Creation
 
