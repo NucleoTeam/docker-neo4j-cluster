@@ -3,7 +3,7 @@
 DIRECTORY="executed"
 
 #set -x
-if [! -d "$DIRECTORY" ]; then
+if [ ! -d "$DIRECTORY" ]; then
         # Check of env variable. Complains+Help if missing
         if [ -z "$SERVER_ID" ]; then
           echo >&2 "--------------------------------------------------------------------------------"
