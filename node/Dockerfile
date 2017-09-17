@@ -11,6 +11,7 @@ RUN apt-get update -y
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
 RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
 RUN apt-get install oracle-java8-installer -y
+RUN apt-get install oracle-java8-set-default -y
 RUN apt-get install -y wget curl
 
 # install neo4j
