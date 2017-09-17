@@ -86,4 +86,5 @@ EXPOSE 5001
 EXPOSE 6001
 EXPOSE 7474
 
-CMD ["/start.sh"]
+ENTRYPOINT ["/start.sh"]
+CMD ["/var/lib/neo4j/bin/neo4j console"]
