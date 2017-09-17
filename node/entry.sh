@@ -65,4 +65,4 @@ fi
 echo "==> Starting Neo4J server (with supervisord)"
 echo
 mkdir $DIRECTORY
-start.sh
+/start.sh
