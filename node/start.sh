@@ -61,7 +61,7 @@ echo
 (
 echo " --- $(hostname) ---"
 echo "Graph settings :"
-grep --color -rE "allow_init_cluster|server_id|cluster_server|initial_hosts|\.server=|webserver\.address|database\.mode" /etc/neo4j/
+grep --color -rE "allow_init_cluster|server_id|cluster_server|initial_hosts|\.server=|webserver\.address|database\.mode" /var/lib/neo4j/
 echo
 echo "Network settings :"
 ip addr | awk '/inet /{print $2}'
