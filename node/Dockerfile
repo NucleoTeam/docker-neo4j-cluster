@@ -5,10 +5,7 @@ MAINTAINER Nathaniel Davidson <nathaniel.davidson@gmail.com>
 
 # required tools
 RUN apt-get update
-RUN apt-get install -y software-properties-common iproute2
-RUN apt-get update -y
-RUN java -version
-RUN apt-get install -y wget curl
+RUN apt-get install -y software-properties-common iproute2 wget curl
 
 # install Java
 RUN apt-get update && apt-get install -y --no-install-recommends \
