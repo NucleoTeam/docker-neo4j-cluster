@@ -20,7 +20,7 @@ fi
 
 # Customize config
 echo "==> Setting server IP config"
-CONFIG_FILE=/etc/neo4j/neo4j.properties
+CONFIG_FILE=/var/lib/neo4j/neo4j.conf
 SERVER_IP=$(ip route get 8.8.8.8 | awk 'NR==1{print $NF}')
 
 sed -i 's/SERVER_ID/'$SERVER_ID'/' $CONFIG_FILE
