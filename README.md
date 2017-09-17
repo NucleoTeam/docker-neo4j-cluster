@@ -1,10 +1,10 @@
-# ekino/neo4j-cluster
+# NucleoTeam/neo4j-cluster
 
 [![Build Status](http://50.115.119.76:2001/job/NucleoTeam/job/docker-neo4j-cluster/job/master/badge/icon)](http://50.115.119.76:2001/job/NucleoTeam/job/docker-neo4j-cluster/job/master/)
 
 ## Description
 
-Get a Neo4J cluster in no time.
+Get a Neo4J 3.2.3 cluster in no time.
 
 ## Licensing
 
