@@ -61,8 +61,8 @@ if [ ! -d "$DIRECTORY" ]; then
         ip addr | awk '/inet /{print $2}'
         ) | awk '{print "   review> "$0}'
         echo
+        mkdir $DIRECTORY
 fi
 echo "==> Starting Neo4J server (with supervisord)"
 echo
-mkdir $DIRECTORY
-/start.sh
+/var/lib/neo4j/bin/neo4j console
