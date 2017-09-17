@@ -44,10 +44,10 @@ fi
 IFS=$OIFS
 
 echo "==> Server settings"
-sed -i 's/^#\(org.neo4j.server.database.mode=\)/\1/' /var/lib/neo4j/conf/neo4j-server.properties
+sed -i 's/^#\(org.neo4j.server.database.mode=\)/\1/' /var/lib/neo4j/conf/neo4j.conf
 
 if [ "$REMOTE_HTTP" = "true" ]; then
-  sed -i '/org.neo4j.server.webserver.address/s/^#//' /var/lib/neo4j/conf/neo4j-server.properties
+  sed -i '/org.neo4j.server.webserver.address/s/^#//' /var/lib/neo4j/conf/neo4j.conf
 fi
 
 if [ "$REMOTE_SHELL" = "true" ]; then
