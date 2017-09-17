@@ -20,7 +20,7 @@ fi
 
 # Customize config
 echo "==> Setting server IP config"
-CONFIG_FILE=/var/lib/neo4j/neo4j.conf
+CONFIG_FILE=/var/lib/neo4j/conf/neo4j.conf
 SERVER_IP=$(ip route get 8.8.8.8 | awk 'NR==1{print $NF}')
 
 sed -i 's/SERVER_ID/'$SERVER_ID'/' $CONFIG_FILE
@@ -44,10 +44,10 @@ fi
 IFS=$OIFS
 
 echo "==> Server settings"
-sed -i 's/^#\(org.neo4j.server.database.mode=\)/\1/' /etc/neo4j/neo4j-server.properties
+sed -i 's/^#\(org.neo4j.server.database.mode=\)/\1/' /var/lib/neo4j/conf/neo4j-server.properties
 
 if [ "$REMOTE_HTTP" = "true" ]; then
-  sed -i '/org.neo4j.server.webserver.address/s/^#//' /etc/neo4j/neo4j-server.properties
+  sed -i '/org.neo4j.server.webserver.address/s/^#//' /var/lib/neo4j/conf/neo4j-server.properties
 fi
 
 if [ "$REMOTE_SHELL" = "true" ]; then
