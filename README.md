@@ -1,6 +1,6 @@
 # ekino/neo4j-cluster
 
-[![Build Status](http://50.115.119.76:2001/buildStatus/icon?job=NucleoTeam/docker-neo4j-cluster/master)](http://50.115.119.76:2001/job/NucleoTeam/docker-neo4j-cluster/master)
+[![Build Status](http://50.115.119.76:2001/job/NucleoTeam/docker-neo4j-cluster/master/badge/icon)](http://50.115.119.76:2001/job/NucleoTeam/docker-neo4j-cluster/master)
 
 ## Description
 
