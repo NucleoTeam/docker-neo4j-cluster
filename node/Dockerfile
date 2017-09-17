@@ -88,4 +88,3 @@ EXPOSE 6001
 EXPOSE 7474
 
 ENTRYPOINT ["/entry.sh"]
-CMD ["/start.sh"]
