@@ -65,4 +65,5 @@ if [ ! -d "$DIRECTORY" ]; then
 fi
 echo "==> Starting Neo4J server (with supervisord)"
 echo
-/var/lib/neo4j/bin/neo4j console
+cd /var/lib/neo4j/;
+./bin/neo4j console
