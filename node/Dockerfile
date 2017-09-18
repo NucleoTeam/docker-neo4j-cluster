@@ -5,7 +5,7 @@ MAINTAINER Nathaniel Davidson <nathaniel.davidson@gmail.com>
 
 # required tools
 RUN apt-get update
-RUN apt-get install -y software-properties-common iproute2 wget curl
+RUN apt-get install -y software-properties-common iproute2 wget curl nano
 
 # install Java
 RUN apt-get update && apt-get install -y --no-install-recommends \
