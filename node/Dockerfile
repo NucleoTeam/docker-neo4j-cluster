@@ -75,9 +75,7 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
 # configure
-ADD start.sh /start.sh
 ADD entry.sh /entry.sh
-#ADD supervisord.conf /etc/supervisor/conf.d/neo4j.conf
 ADD neo4j.conf /var/lib/neo4j/conf/neo4j.conf
 
 ENV REMOTE_HTTP true
