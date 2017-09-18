@@ -62,12 +62,12 @@ RUN set -ex; \
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 
 # install neo4j
-RUN wget http://neo4j.com/artifact.php?name=neo4j-enterprise-3.2.3-unix.tar.gz -O neo4j-enterprise-3.2.3-unix.tar.gz
-RUN tar -xf neo4j-enterprise-3.2.3-unix.tar.gz
+RUN wget http://neo4j.com/artifact.php?name=neo4j-enterprise-3.1.2-unix.tar.gz -O neo4j-enterprise-3.1.2-unix.tar.gz
+RUN tar -xf neo4j-enterprise-3.1.2-unix.tar.gz
 RUN mkdir /var/lib/neo4j/
-RUN cd neo4j-enterprise-3.2.3/; mv ./* /var/lib/neo4j/;cd ..
-RUN rm -f neo4j-enterprise-3.2.3-unix.tar.gz
-RUN rm -Rf neo4j-enterprise-3.2.3/
+RUN cd neo4j-enterprise-3.1.2/; mv ./* /var/lib/neo4j/;cd ..
+RUN rm -f neo4j-enterprise-3.1.2-unix.tar.gz
+RUN rm -Rf neo4j-enterprise-3.1.2/
 
 # cleanup
 RUN apt-get autoremove -y wget
